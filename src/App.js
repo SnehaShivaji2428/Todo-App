@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Todo from './components/Todo';
 
 function App() {
+  const [mode, setMode] = useState('light');
+  const [btn, setBtn] = useState('Enable Dark Mode');
+  const [butn, setButn] = useState('secondary');
+  const [myStyle, setMyStyle] = useState({
+    color : 'black',
+    backgroundColor : 'white'
+  });
+  const toggleMode = () => {
+    if (mode === 'light'){
+      setMode('dark');
+      setBtn('Enable Light Mode');
+      setButn('primary');
+      setMyStyle({
+        color : 'white',
+        backgroundColor : '#303030'
+      })
+      document.body.style.backgroundColor = "#303030";
+    } else {
+      setMode('light');
+      setBtn('Enable Dark Mode');
+      setButn('secondary');
+      setMyStyle({
+        color : '#303030',
+        backgroundColor : 'white'
+      })
+      document.body.style.backgroundColor = "white";
+    }
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Todo mode={mode} toggleMode={toggleMode} btn={btn} myStyle={myStyle} butn={butn} />
+    </>
   );
 }
 

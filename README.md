@@ -23,9 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Feel free to use this code and improve it wherever necessary.
 
-## Project demo
 
-[Click here to view project demo](https://snehashivaji2428.github.io/Todo-App)
 
 
 

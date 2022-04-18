@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This is a simple todo app. Database is not added in this project.
+This is a simple todo app. LocalStorage is used in this project.
 
 ## How to get started
 

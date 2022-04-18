@@ -25,7 +25,7 @@ Feel free to use this code and improve it wherever necessary.
 
 ## Project demo
 
-[Click here to view project demo](https://SnehaShivaji2428.github.io/Todo-App)
+[Click here to view project demo](https://snehashivaji2428.github.io/Todo-App)
 
 
 
